@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="far" x2="0" y2="1"><stop stop-color="#78bca2"/><stop offset="1" stop-color="#2c7f78"/></linearGradient>
+    <linearGradient id="near" x2=".2" y2="1"><stop stop-color="#72b85d"/><stop offset="1" stop-color="#164e49"/></linearGradient>
+    <linearGradient id="front" x2="0" y2="1"><stop stop-color="#40894c"/><stop offset="1" stop-color="#0b3b3d"/></linearGradient>
+    <g id="tree"><path d="M-2 0v-42h5V0" fill="#416959"/><path d="M-19-33c-11-14 0-26 7-24-5-22 20-29 27-11 15-1 23 23 8 27 9 20-27 25-42 8" fill="#337d65"/></g>
+  </defs>
+  <path d="M0 113C190-15 365 189 574 119S942 5 1139 97 1433 4 1600 45V400H0Z" fill="url(#far)"/>
+  <path d="M0 175C260 55 325 117 529 196S909 87 1147 166 1413 100 1600 129V400H0Z" fill="url(#near)"/>
+  <g opacity=".65"><use href="#tree" transform="translate(44 153) scale(.8)"/><use href="#tree" transform="translate(79 138) scale(.6)"/><use href="#tree" transform="translate(118 131) scale(.9)"/><use href="#tree" transform="translate(1470 156) scale(.9)"/><use href="#tree" transform="translate(1510 149) scale(.65)"/><use href="#tree" transform="translate(1560 149) scale(.85)"/></g>
+  <path d="M0 251C211 202 293 275 493 287S790 239 1001 270 1383 182 1600 234V400H0Z" fill="url(#front)"/>
+  <path d="M0 255C188 214 279 277 467 289M1107 265c195-32 303-71 493-27" fill="none" stroke="#b1db7d" stroke-width="2" opacity=".18"/>
+  <g fill="#8dc881" opacity=".35"><path d="m41 325 7-18 4 18 10-12-4 15m130-45 4-13 3 13 7-6m1300 54 8-20 4 19 10-13-3 16m-117-37 5-12 3 11 9-6"/></g>
+</svg>

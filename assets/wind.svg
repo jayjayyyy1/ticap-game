@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110">
+<defs>
+<linearGradient id="metal">
+<stop stop-color="#94bfd3"/>
+<stop offset=".35" stop-color="#fff"/>
+<stop offset=".6" stop-color="#e0f4f9"/>
+<stop offset="1" stop-color="#7baec7"/>
+</linearGradient>
+<linearGradient id="blades" x2=".7" y2="1">
+<stop stop-color="#fff"/>
+<stop offset=".5" stop-color="#e0f6ff"/>
+<stop offset="1" stop-color="#8bbacf"/>
+</linearGradient>
+<radialGradient id="hub" cx=".35" cy=".25">
+<stop stop-color="#fff7c1"/>
+<stop offset=".5" stop-color="#ffd43b"/>
+<stop offset="1" stop-color="#d9920a"/>
+</radialGradient>
+</defs>
+<ellipse cx="61" cy="102" rx="35" ry="4" fill="#18446e" opacity=".12"/>
+<path d="m56 44-5 55h19l-5-55" fill="url(#metal)" stroke="#4e8ba6" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M59 42 47 15c-3-9 0-13 4-12 6 3 13 25 13 37M65 43l29-10c10-3 13 1 10 5-4 5-26 12-38 11M58 48 40 73c-6 8-11 7-11 2 0-7 15-25 25-31" fill="url(#blades)" stroke="#4e8ba6" stroke-width="2.5" stroke-linejoin="round"/>
+<circle cx="60" cy="44" r="9" fill="url(#hub)" stroke="#3b7da2" stroke-width="3"/>
+<circle cx="60" cy="44" r="3" fill="#fff5bb"/>
+<path d="M25 99h68" stroke="#67b34c" stroke-width="4" stroke-linecap="round"/>
+<path d="M15 31h14m-17 8h10m62 34h16m-10 8h18" stroke="#a4d7e2" stroke-width="2.5" stroke-linecap="round"/>
+<path d="m77 98 5-9 3 9" fill="#71c837"/>
+</svg>

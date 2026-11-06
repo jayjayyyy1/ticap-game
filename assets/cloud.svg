@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 110">
+  <defs><linearGradient id="cloud" x2="0" y2="1"><stop stop-color="#fff" stop-opacity=".92"/><stop offset="1" stop-color="#c6e8ff" stop-opacity=".2"/></linearGradient></defs>
+  <path d="M21 91C-2 88 2 57 24 53c-2-24 28-42 49-27C87-8 143-4 159 31c20-11 49-2 53 18 27-17 66-3 65 21 35-10 46 22 20 24Z" fill="url(#cloud)"/>
+  <path d="M31 56c5-19 26-22 40-12M91 23c18-13 43-8 52 7M223 62c15-8 32-2 36 9" fill="none" stroke="#fff" stroke-opacity=".32" stroke-width="4" stroke-linecap="round"/>
+</svg>

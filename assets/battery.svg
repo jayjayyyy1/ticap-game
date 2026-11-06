@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110">
+<defs>
+<linearGradient id="metal" x2=".2" y2="1">
+<stop stop-color="#f7fcff"/>
+<stop offset=".45" stop-color="#c2dce6"/>
+<stop offset="1" stop-color="#6f9baa"/>
+</linearGradient>
+<linearGradient id="bolt" x2=".5" y2="1">
+<stop stop-color="#fffde3"/>
+<stop offset=".5" stop-color="#fff297"/>
+<stop offset="1" stop-color="#f4c734"/>
+</linearGradient>
+</defs>
+<defs>
+<linearGradient id="b">
+<stop stop-color="#3d8d36"/>
+<stop offset=".18" stop-color="#94dc57"/>
+<stop offset=".4" stop-color="#c5ee80"/>
+<stop offset=".7" stop-color="#6dc83f"/>
+<stop offset="1" stop-color="#287c35"/>
+</linearGradient>
+</defs>
+<ellipse cx="60" cy="101" rx="29" ry="4" fill="#18446e" opacity=".12"/>
+<rect x="48" y="8" width="24" height="12" rx="4" fill="url(#metal)" stroke="#41687c" stroke-width="2.5"/>
+<rect x="33" y="18" width="54" height="80" rx="9" fill="url(#b)" stroke="#327e40" stroke-width="3"/>
+<path d="M34 35h52V26a7 7 0 0 0-7-7H41a7 7 0 0 0-7 7z" fill="url(#metal)"/>
+<path d="M34 35h52" stroke="#327e40" stroke-width="2.5"/>
+<path d="M41 42v44" stroke="#d0f4a2" stroke-width="4" stroke-linecap="round"/>
+<path d="m63 42-16 25h12l-3 19 19-27H62z" fill="url(#bolt)" stroke="#4b943b" stroke-width="2" stroke-linejoin="round"/>
+<path d="M55 27h10m-5-5v10" stroke="#41687c" stroke-width="2" stroke-linecap="round"/>
+</svg>

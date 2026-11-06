@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110">
+<defs>
+<radialGradient id="leaves" cx=".35" cy=".22" r=".85">
+<stop stop-color="#cefa8a"/>
+<stop offset=".4" stop-color="#85d743"/>
+<stop offset=".75" stop-color="#46a52f"/>
+<stop offset="1" stop-color="#247441"/>
+</radialGradient>
+<linearGradient id="trunk">
+<stop stop-color="#976134"/>
+<stop offset=".4" stop-color="#dfb975"/>
+<stop offset="1" stop-color="#976134"/>
+</linearGradient>
+</defs>
+<ellipse cx="61" cy="101" rx="34" ry="4" fill="#255e3c" opacity=".12"/>
+<path d="m55 57-2 41h19l-5-41" fill="url(#trunk)" stroke="#7d6337" stroke-width="3" stroke-linejoin="round"/>
+<path d="m61 79-14-12m15 6 14-13" fill="none" stroke="#7d6337" stroke-width="3" stroke-linecap="round"/>
+<path d="M34 75C14 71 14 47 31 41c-2-16 11-24 23-21 11-20 34-9 35 6 20 0 28 22 15 34 3 18-21 29-34 18-12 11-28 7-36-3Z" fill="url(#leaves)" stroke="#378b40" stroke-width="3" stroke-linejoin="round"/>
+<path d="M30 43c-10 10-2 23 6 24m20-39c11-14 24-7 24 2" fill="none" stroke="#b2e77b" stroke-width="6" stroke-linecap="round"/>
+<path d="M48 49c-4 11 7 21 17 13m15-17c0 9 9 13 14 9" fill="none" stroke="#4ea53c" stroke-width="3" stroke-linecap="round"/>
+<path d="m41 99 5-8 3 8m28 0 4-7 3 7" fill="url(#leaves)" stroke="#378b40" stroke-width="2" stroke-linejoin="round"/>
+</svg>

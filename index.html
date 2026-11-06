@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#073b8c">
+  <meta name="description" content="Five free spins. A little sunshine. A brighter tomorrow. Play SOLMATE, the solar energy arcade game.">
+  <title>SOLMATE · Lucky Solar Spins</title>
+  <link rel="icon" href="assets/sun.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="solar-scene" aria-hidden="true">
+    <div class="sky-rays"></div><div class="sky-sun"></div>
+    <img class="cloud cloud-one" src="assets/cloud.svg" alt="">
+    <img class="cloud cloud-two" src="assets/cloud.svg" alt="">
+    <img class="cloud cloud-three" src="assets/cloud.svg" alt="">
+    <img class="solar-hills" src="assets/solar-hills.svg" alt="">
+    <img class="landscape-tree tree-one" src="assets/tree.svg" alt="">
+    <img class="landscape-tree tree-two" src="assets/tree.svg" alt="">
+    <img class="landscape-house" src="assets/house.svg" alt="">
+    <img class="solar-array array-left" src="assets/solar-array.svg" alt="">
+  </div>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="SOLMATE home"><span class="brand-mark" aria-hidden="true"><img src="assets/sun.svg" alt=""></span> SOLMATE<span class="brand-divider"></span><span class="brand-note">A LITTLE PLAY. A BRIGHTER DAY.</span></a>
+    <span class="exhibit-badge">SOLAR PARK <span aria-hidden="true">/</span> PLAY STATION 01</span>
+  </header>
+
+  <main>
+    <section class="game-area" aria-label="Lucky Solar Spins game">
+      <div class="platform" aria-hidden="true"></div>
+      <svg class="power-cable" viewBox="0 0 1200 120" aria-hidden="true"><path d="M445 14c-18 53-121 16-161 51S152 131 43 63"/><path d="M445 12c-18 53-121 16-161 51S152 129 43 61"/></svg>
+      <div class="machine" id="machine">
+        <div class="cabinet-bolt bolt-tl" aria-hidden="true"></div><div class="cabinet-bolt bolt-tr" aria-hidden="true"></div>
+        <div class="machine-heading">
+          <div class="heading-title"><h1><span class="title-word">SOLMATE</span><img class="title-sun" src="assets/sun.svg" alt=""></h1><h2>Lucky Solar Spins</h2><p>Spin for a brighter tomorrow!</p></div>
+        </div>
+        <div class="cabinet-nameplate"><span class="power-status"><i aria-hidden="true"></i> SUN POWER. GOOD ENERGY.</span><button id="prize-info" type="button" aria-label="Solar Jackpot: 1,000 points. View game rules."><img src="assets/panel.svg" alt=""><span>SOLAR JACKPOT <strong>1,000</strong></span></button></div>
+
+        <div class="reel-surround">
+          <div class="marquee-lights lights-top" aria-hidden="true"></div>
+          <div class="marquee-lights lights-left" aria-hidden="true"></div>
+          <div class="marquee-lights lights-right" aria-hidden="true"></div>
+          <div class="payline-labels" aria-hidden="true"><b>1</b><b>2</b><b>3</b></div>
+          <div class="reel-window" id="reel-window" role="img" aria-label="Five reels, each with three solar energy symbols. Ready to spin.">
+            <div class="reel" data-reel="0"><div class="reel-strip"></div></div>
+            <div class="reel" data-reel="1"><div class="reel-strip"></div></div>
+            <div class="reel" data-reel="2"><div class="reel-strip"></div></div>
+            <div class="reel" data-reel="3"><div class="reel-strip"></div></div>
+            <div class="reel" data-reel="4"><div class="reel-strip"></div></div>
+            <div class="paylines" id="paylines" aria-hidden="true"></div>
+          </div>
+          <div class="marquee-lights lights-bottom" aria-hidden="true"></div>
+        </div>
+
+        <div class="feedback" id="feedback" role="status" aria-live="polite"><span class="feedback-star" aria-hidden="true">✦</span><span id="message">Your next bright moment is one spin away.</span><span class="feedback-star" aria-hidden="true">✦</span></div>
+
+        <div class="cabinet-deck"><div class="control-deck">
+          <div class="meter energy-meter"><span class="meter-label"><span aria-hidden="true">ϟ</span> ENERGY POINTS</span><span class="meter-value" id="points">0</span></div>
+          <button class="spin-button" id="spin" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M20 11a8 8 0 1 0-2 6M20 4v7h-7"/></svg><span id="spin-label">SPIN</span><span class="spin-key">SPACE / ENTER</span></button>
+          <div class="meter spins-meter"><span class="meter-label">SPINS REMAINING</span><span class="meter-value"><span id="spins">5</span><span class="meter-total"> / 5</span></span><div class="spin-dots" id="spin-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></div>
+        </div>
+
+        <nav class="utility-controls" aria-label="Game controls">
+          <button id="sound" type="button" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m11 5-6 5H2v4h3l6 5V5ZM15 8a6 6 0 0 1 0 8M18 5a10 10 0 0 1 0 14"/></svg><span>Sound on</span></button>
+          <button id="how-to-play" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.5 2.5 0 1 1 4.3 1.7c-1.2.8-1.8 1.1-1.8 3.3M12 17v.2"/></svg><span>How to play</span></button>
+          <button id="fullscreen" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg><span>Fullscreen</span></button>
+          <span class="utility-divider" aria-hidden="true"></span>
+          <button id="new-player" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10a8 8 0 1 1 1 7M4 4v6h6"/></svg><span>New player</span></button>
+        </nav></div>
+        <div class="cabinet-base" aria-hidden="true"><i></i><span>SOLMATE ENERGY CO. · SUNSHINE SERIES</span><i></i></div>
+        <div class="cabinet-bolt bolt-bl" aria-hidden="true"></div><div class="cabinet-bolt bolt-br" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <footer><strong>5 free spins. Three rows. A little sunshine.</strong><span>Fictional points. Real solar inspiration.</span></footer>
+  </main>
+
+  <dialog id="rules-dialog" aria-labelledby="rules-title">
+    <button class="dialog-close" type="button" data-close aria-label="Close rules">×</button>
+    <span class="eyebrow">A LITTLE LUCK. A LOT OF ENERGY.</span><h2 id="rules-title">How to shine</h2><p>Start with <strong>5 free spins</strong> and 0 Energy Points. Tap the yellow button and let the sunshine roll.</p>
+    <div class="rules-symbols" aria-label="Solar panel, sun, tree, solar house, battery, and wind turbine"><img src="assets/panel.svg" alt="Solar panel"><img src="assets/sun.svg" alt="Sun"><img src="assets/tree.svg" alt="Tree"><img src="assets/house.svg" alt="Solar house"><img src="assets/battery.svg" alt="Battery"><img src="assets/wind.svg" alt="Wind turbine"></div>
+    <p>Each of the <strong>3 horizontal rows</strong> is a payline. Match at least 3 identical symbols consecutively, starting at the <strong>leftmost reel</strong>.</p>
+    <div class="reward-table"><div><span>3 matching</span><strong>50 pts</strong></div><div><span>4 matching</span><strong>150 pts</strong></div><div><span>5 matching</span><strong>500 pts</strong></div><div class="jackpot-reward"><span>5 solar panels</span><strong>1,000 pts</strong></div></div>
+    <p class="rules-small">Only the longest match in each row pays. Winning rows add together. The Solar Jackpot replaces the 500-point prize for that row. Each spin uses one spin. No money, bets, or real-world prizes.</p>
+    <button class="dialog-primary" type="button" data-close>GOT IT. LET’S PLAY!</button>
+  </dialog>
+  <dialog id="finish-dialog" aria-labelledby="finish-title">
+    <span class="finish-sun" aria-hidden="true">☀</span><span class="eyebrow">THAT’S SOME GOOD ENERGY</span><h2 id="finish-title">You made it brighter.</h2><p>Five spins, a little sunshine, and a score to celebrate.</p><div class="final-score"><span id="final-points">0</span><small>ENERGY POINTS</small></div><p class="finish-note" id="finish-note">Thanks for spinning toward a brighter tomorrow!</p><button class="dialog-primary" id="next-player" type="button">NEXT PLAYER <span aria-hidden="true">→</span></button><button class="dialog-secondary" type="button" data-close>View the reels</button>
+  </dialog>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 240">
+  <defs>
+    <linearGradient id="frame" x2=".4" y2="1"><stop stop-color="#d0edf3"/><stop offset=".4" stop-color="#739eb6"/><stop offset=".65" stop-color="#e7f6f5"/><stop offset="1" stop-color="#325878"/></linearGradient>
+    <linearGradient id="panel" x2=".6" y2="1"><stop stop-color="#2987c7"/><stop offset=".5" stop-color="#12528e"/><stop offset="1" stop-color="#082d65"/></linearGradient>
+    <linearGradient id="shine" x2="1" y2="1"><stop stop-color="#d8f8ff" stop-opacity=".4"/><stop offset=".5" stop-color="#d8f8ff" stop-opacity=".02"/></linearGradient>
+    <g id="module">
+      <path d="M4 2h175l21 91H-17Z" fill="url(#frame)" stroke="#153f60" stroke-width="2.5" stroke-linejoin="round"/>
+      <path d="M9 8h165l17 78H-8Z" fill="url(#panel)" stroke="#173b66" stroke-width="1.5"/>
+      <g stroke="#8ac5e7" stroke-width="1" opacity=".8"><path d="M36 8 26 86M64 8l-4 78M92 8l2 78m25-78 9 78m18-78 16 78M4 27h174M0 47h182M-4 66h190"/></g>
+      <path d="M9 8h165L72 86H-8Z" fill="url(#shine)"/>
+      <path d="M4 2h175" stroke="#e4f9ff" stroke-width="2"/>
+    </g>
+  </defs>
+  <ellipse cx="212" cy="216" rx="192" ry="17" fill="#052d35" opacity=".28"/>
+  <g transform="translate(75 20) scale(.72)">
+    <path d="M10 85v61m163-61v61m-168 0h18m142 0h18" fill="none" stroke="#8babba" stroke-width="5"/>
+    <use href="#module"/><use href="#module" transform="translate(188 0)"/>
+  </g>
+  <g transform="translate(30 95)">
+    <path d="m15 86-4 30m165-30 7 30m18-30-3 30m166-30 6 30M2 117h20m150 0h20m-2 0h20m150 0h20" fill="none" stroke="#678e9f" stroke-width="5"/>
+    <use href="#module"/><use href="#module" transform="translate(193 0)"/>
+  </g>
+</svg>

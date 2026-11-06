@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 110">
+<defs>
+<linearGradient id="wall" x2=".7" y2="1">
+<stop stop-color="#fffce6"/>
+<stop offset=".5" stop-color="#fff0b9"/>
+<stop offset="1" stop-color="#d7ad63"/>
+</linearGradient>
+<linearGradient id="roof" x2=".4" y2="1">
+<stop stop-color="#78c9ff"/>
+<stop offset=".5" stop-color="#238bdd"/>
+<stop offset="1" stop-color="#0e4f94"/>
+</linearGradient>
+<linearGradient id="gold" x2=".4" y2="1">
+<stop stop-color="#fff2a4"/>
+<stop offset=".5" stop-color="#ffcd4c"/>
+<stop offset="1" stop-color="#dc8c1d"/>
+</linearGradient>
+<linearGradient id="glass" x2=".8" y2="1">
+<stop stop-color="#c9f5ff"/>
+<stop offset=".5" stop-color="#62c1e9"/>
+<stop offset="1" stop-color="#2683b8"/>
+</linearGradient>
+</defs>
+<ellipse cx="60" cy="102" rx="44" ry="4" fill="#18446e" opacity=".12"/>
+<path d="M21 47h77v51H21z" fill="url(#wall)" stroke="#b87e39" stroke-width="2.5"/>
+<path d="M77 17h13v25H77z" fill="url(#gold)" stroke="#b87e39" stroke-width="2.5"/>
+<path d="m9 50 34-35h41l28 35z" fill="url(#roof)" stroke="#124f88" stroke-width="3" stroke-linejoin="round"/>
+<path d="m43 15 30 35H10z" fill="url(#gold)" stroke="#b87e39" stroke-width="3" stroke-linejoin="round"/>
+<path d="m49 23 31 0 15 20H66z" fill="#07509c" stroke="#b9e7ff" stroke-width="2"/>
+<path d="m59 23 16 20m-5-20 16 20M57 33h31" fill="none" stroke="#80c9ed" stroke-width="1.2"/>
+<path d="M33 69h22v29H33z" fill="url(#glass)" stroke="#3a7d99" stroke-width="2.5"/>
+<circle cx="49" cy="84" r="2" fill="#ffdf70"/>
+<path d="M68 62h20v20H68z" fill="url(#glass)" stroke="#397e9f" stroke-width="2.5"/>
+<path d="M78 62v20M68 72h20" stroke="#fff" stroke-width="2"/>
+<path d="M28 99h32" stroke="#b87e39" stroke-width="3" stroke-linecap="round"/>
+<path d="M94 99c-10-6-5-15 1-12 4-12 16-5 13 2 9 6 2 15-14 10" fill="#71c837" stroke="#378b40" stroke-width="2"/>
+</svg>
